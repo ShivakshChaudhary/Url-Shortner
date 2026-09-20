@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Url Shortner</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+  </head>
+
+  <body>
+    <div class="heading">
+      <h1>Understand what clicks with your audience</h1>
+      <p>
+        Url Short makes it easy to create, share, and track short links. Find
+        what's resonating and scale it into bigger reach, more clicks, and more
+        sales.
+      </p>
+    </div>
+    <div class="input-tab-outer">
+      <div class="input-tab">
+        <h3 class="input-tab-head">
+          Shorten a long link <i class="fa-solid fa-link"></i>
+        </h3>
+        <form id="UrlForm" method="post"></form>
+        <label class="input-tab-lable" for="input"
+          >Paste your long link here</label
+        >
+        <input
+          type="text"
+          name="input"
+          id="input"
+          placeholder="https://example.com/my-long-url"
+        />
+        <button onclick="api();" id="btn" type="submit">
+          Get Your Link <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+
+        <div id="result" class="result">
+          <div>
+            <p>Here is your link</p>
+            <p id="url" class="url">https://example.com/abc123</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
