@@ -2,7 +2,7 @@ const url = document.getElementById("url");
 const input = document.querySelector('#input');
 const api = async () => {
   try {
-    const response = await fetch("http://localhost:3000/api/url", {
+    const response = await fetch("https://urlshortner-backend.shivakshchaudhary.qzz.io/api/url", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
