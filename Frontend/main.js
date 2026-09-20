@@ -12,7 +12,7 @@ const api = async () => {
       }),
     });
     const data = await response.json();
-    url.innerText = "http://localhost:3000/" + data.shortCode;
+    url.innerText = "https://urlshortner-backend.shivakshchaudhary.qzz.io/" + data.shortCode;
     document.getElementById("result").style.visibility = "visible";
   } catch (error) {
     alert("Failed To Create!")
